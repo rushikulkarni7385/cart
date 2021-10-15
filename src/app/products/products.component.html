@@ -1,0 +1,37 @@
+<section class="products">
+    <div class="container-fluid border-bottom mb-5">
+        <div class="container">
+            <div class="products_category">
+              <div class="row">
+                  <div class="col-md-1" *ngFor="let cat of category" style="padding-right: -15px !important;">
+                      <div class="img-item">
+                          <h6 (click)="filterByCategory(cat)">{{cat | uppercase}}</h6>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+       <div class="container">
+        <div class="products_list">
+            <div class="row">
+                <ng-container *ngFor="let item of productList">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="{{item.p_image}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{item.p_name}}</h5>
+                                <p class="card-text"><strong>Price</strong> : {{item.p_cost}}</p>
+                                <p class="card-text"><strong>Details</strong> : {{item.p_details}}</p>
+                                <!-- <p class="card-text"><strong>Rating</strong> : {{item.rating.rate}} <span class="star"><i class="fas fa-star"></i></span></p> -->
+                                <a class="btn btn-primary form-control" (click)="addItem(item)">Add Item</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+       </div>
+</section>
+<app-loader *ngIf="loader"></app-loader>

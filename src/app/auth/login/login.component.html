@@ -1,0 +1,54 @@
+<section class="login">
+    <div class="container">
+        <div class="loginPage">
+            <div class="row">
+                <div class="col-md-6">
+                        <div class="login-content text-center">
+                            <h1>
+                                <em>FRUIT CART</em>
+                            </h1>
+                            <p>
+                                Login
+                            </p>
+                        </div>
+                        <form [formGroup]="logInForm" (ngSubmit)="onLogIn()">
+                            <div class="form-group">
+                                <label for="email">
+                                    Email*
+                                </label>
+                                <input type="email"
+                                    name="email" id="email" 
+                                    formControlName="email"
+                                    class="form-control"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">
+                                    Password*
+                                </label>
+                                <input type="password"
+                                    name="password" id="password" 
+                                    formControlName="password"
+                                    class="form-control"
+                                    required>
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn login-btn btn-primary btn-ripple">
+                                    LOG IN
+                                </button>
+                            </div>
+                        </form>
+                </div>
+                <div class="col-md-6 loginBg">
+                    <div class="logInImg">
+                            <carousel>
+                               <slide *ngFor="let slide of slides; let index=index">
+                                  <img [src]="slide.image" alt="image slide">
+                               </slide>
+                            </carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

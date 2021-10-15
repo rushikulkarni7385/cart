@@ -1,0 +1,39 @@
+[
+    {
+    "p_name":"Apple",
+    "p_id":1,
+    "p_cost":30,
+    "p_availability":1,
+    "p_details":"Imported from Swiss",
+    "p_category":"Premium",
+    "p_image":"https://media.istockphoto.com/photos/woman-baking-cake-with-freshly-picked-apples-picture-id1255425993?b=1&k=20&m=1255425993&s=170667a&w=0&h=03Txrx5SqUbkMwuPadhNrraM7W44WYypsvrBuYO4zg0="
+    },
+    {
+    "p_name":"Mango",
+    "p_id":2,
+    "p_cost":50,
+    "p_availability":1,
+    "p_details":"Farmed at Selam",
+    "p_category":"Tamilnadu",
+    "p_image":"https://images.unsplash.com/photo-1582655299221-2b6bff351df0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFuZ298ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+    "p_name":"Bananna",
+    "p_id":3,
+    "p_cost":5,
+    "p_availability":0,
+    "p_details":"from Nagpur",
+    "p_category":"Tamilnadu",
+    "p_image":"https://images.unsplash.com/photo-1526364163643-89e30b8fcb70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhbmFuYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+    "p_name":"Orange",
+    "p_id":4,
+    "p_cost":25,
+    "p_availability":1,
+    "p_details":"from Nagpur",
+    "p_category":"Premium",
+    "p_image":"https://media.istockphoto.com/photos/orange-juice-glass-jar-shot-on-rustic-wooden-table-picture-id915657126?b=1&k=20&m=915657126&s=170667a&w=0&h=N5gBvWtUcAIPCtPYmjs13jzb0qykCWeWvsQUFIMnSak="
+    }
+   ]
+   

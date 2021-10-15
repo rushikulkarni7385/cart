@@ -1,0 +1,103 @@
+.login {
+    background-image: #f6f5f7;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &Page {
+        width: 80%;
+        height: 70vh;
+        box-shadow: 0rem 1rem 2rem rgb(0 0 0 / 40%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 3rem 10rem;
+        .login-content {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.logInImg {
+    background-image: linear-gradient(to right bottom, #7bc3f6, #3946a1);
+    width: 30rem;
+    height: 100%;
+    position: relative;
+    carousel {
+        object-fit: cover;
+        padding: 2rem;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+            object-fit: cover;
+            object-position: center center;
+            height: 17rem;
+            width: 40rem;
+        }
+    }
+}
+
+.btn-ripple {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+}
+
+.btn-ripple::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 100%;
+    width: 50%;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease-in-out 1s;
+    transform: scale(5, 5);
+}
+
+.btn-ripple:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 0.2;
+    transition: 0s;
+    transform: scale(0, 0);
+}
+
+.login-btn {
+    border-radius: 5px;
+    box-shadow: 0 3px 4px #8abfff;
+    background-image: linear-gradient(to right,#7bc3f6,#3946a1,#7bc3f6);
+    background-size: 200%;
+    width: 250px;
+    border: none;
+    outline: 0;
+    transition: .3s ease-in-out;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    &:hover{
+        background-image: linear-gradient(to left, #3946a1, #7bc3f6, #3946a1);
+    }
+}
+
+
+input.ng-invalid.ng-touched{
+    border:1px solid red;
+}

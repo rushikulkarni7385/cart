@@ -1,0 +1,21 @@
+header a {
+    color: #fff;
+}
+
+nav {
+    background-color: blue;
+    padding: 12px 0px 6px;
+    .fa-shopping-bag,
+    .fa-cart-plus {
+        font-size: 30px;
+        
+    }
+    h1 {
+        font-size: 22px;
+        color: white;
+        line-height: 36px;
+    }
+    .badge {
+        background-color: orange;
+    }
+}

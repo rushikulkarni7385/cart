@@ -1,0 +1,29 @@
+.card{
+    height: 500px;
+    width: 80vw !important;
+    h3{
+        font-size: 22px;
+        padding: 20px;
+    }
+    .card-body{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
+    }
+   
+}
+
+a{
+    cursor: pointer;
+    color: red;
+    font-size: 16px;
+}
+
+
