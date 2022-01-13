@@ -13,7 +13,6 @@ export class CartComponent implements OnInit, OnChanges {
   constructor(private cartService: CartServiceService, private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.products = this.cartService.getItem();
   }
 
 
