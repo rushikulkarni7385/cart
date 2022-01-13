@@ -10,6 +10,7 @@ import { IProduct } from '../shared/i-product';
 })
 export class CartComponent implements OnInit, OnChanges {
   constructor(private cartService: CartServiceService, private http: HttpClient) { }
+  name : string = 'Rushi';
 
   ngOnInit(): void {
   }
