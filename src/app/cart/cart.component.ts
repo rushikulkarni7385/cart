@@ -9,11 +9,10 @@ import { IProduct } from '../shared/i-product';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit, OnChanges {
-  products!: any[];
   constructor(private cartService: CartServiceService, private http: HttpClient) { }
+  name : string = 'Rushi';
 
   ngOnInit(): void {
-    this.products = this.cartService.getItem();
   }
 
 
